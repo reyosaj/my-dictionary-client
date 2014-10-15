@@ -1,0 +1,41 @@
+body {
+    padding: 0px 65px 65px 65px;
+}
+
+footer {
+    margin-top:10px;
+    font-weight: bold;
+}
+
+/* Bootstrap overrides */
+.navbar-inner {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.navbar .nav {
+    margin-left:50px;
+    margin-top:15px;
+}
+
+.navbar .nav .nav-button {
+	padding-top: 5pt;
+	padding-bottom: 5pt;
+}
+
+.search {
+	margin-left: 10pt;
+	margin-right: 10pt;
+}
+
+.view {
+    left: 60px;
+    position: relative;
+    opacity: 1.0;
+}
+
+.title {
+	font-size: 18pt;
+	margin-right: 16px;
+	font-weight: bold;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html data-ng-app="DictionaryApp">
+	<head>
+		<title>Dictionary App</title>
+		<link href="css/bootstrap.css" rel="stylesheet" />
+		<link href="css/bootstrap-responsive.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="navbar navbar-static-top">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<ul class="nav nav-pills">
+						<li><label class="title">Dictionary</label></li>
+						<li><div data-ng-controller="SearchController"><input type="text" id="ttsearch" placeholder="Search" ng-model="selectedWord" autocomplete="off"/></div></li>
+						<li><a class="nav-button active" href="#/addWord">Add Word</a></li>
+						<li><a class="nav-button" href="#/words">Word List</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid view">
+			<div ng-view></div>
+		</div>
+		
+		<div id="footer">
+			<div class="navbar-fixed-bottom">
+				<div class="navbar-inner">
+					<div class="container">
+						<footer>
+							<div class="row">
+								<div class="span4">
+									 --
+								</div>
+								<div class="span4"></div>
+							</div>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="scripts/angular.min.js"></script>
+		<script src="scripts/angular-route.min.js"></script>
+		<script src="scripts/jquery-1.11.1.min.js"></script>
+		<script src="scripts/bootstrap-typeahead.min.js"></script>
+		<script src="app.js"></script>
+		<script src="controllers/controllers.js"></script>
+	</body>
+
+</html>
